@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cagliari Aesthetics | Mermaid Beach</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600;700&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            blush: '#e8d4cc',
+            sand: '#c29b5c',
+            charcoal: '#393a36',
+            softcream: '#F4EAE6'
+          },
+          fontFamily: {
+            serif: ['Lora', 'serif'],
+            sans: ['Montserrat', 'sans-serif']
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    body {
+      font-family: 'Montserrat', sans-serif;
+      background: linear-gradient(180deg, #ffffff 0%, #e8d4cc 100%);
+      color: #393a36;
+    }
+    .glass-card {
+      background: rgba(255, 255, 255, 0.72);
+      backdrop-filter: blur(18px);
+      -webkit-backdrop-filter: blur(18px);
+    }
+    .hero-overlay {
+      background: linear-gradient(180deg, rgba(249,243,241,0.55) 0%, rgba(255,255,255,0.95) 100%);
+    }
+  </style>
+</head>
+<body class="min-h-screen text-charcoal">
+  <div class="relative overflow-hidden">
+    <header class="fixed inset-x-0 top-0 z-30 border-b border-white/80 bg-white/75 backdrop-blur-xl shadow-sm">
+      <div class="mx-auto flex max-w-7xl items-center justify-between px-6 py-4 sm:px-8">
+        <a href="#home" class="flex items-center gap-3 tracking-[0.35em] text-charcoal" aria-label="Cagliari Aesthetics">
+          <img src="assets/logo.png" alt="Cagliari Aesthetics logo" class="h-12 sm:h-14 md:h-16" />
+        </a>
+        <nav class="hidden items-center gap-8 text-sm font-medium uppercase tracking-[0.24em] text-charcoal lg:flex">
+          <a href="#home" class="transition hover:text-sand">Home</a>
+          <a href="#about" class="transition hover:text-sand">About Gabby</a>
+          <a href="#treatments" class="transition hover:text-sand">Treatments</a>
+          <a href="#location" class="transition hover:text-sand">Location</a>
+        </nav>
+        <div class="hidden lg:block">
+          <a href="https://bookings.gettimely.com/cagliariaesthetics1/book?uri=https%3A%2F%2Fbook.gettimely.com%2FBooking%2FLocation%2F311878%3Fmobile%3DTrue%26params%3D%25253fclient-login%25253dtrue" class="rounded-full bg-charcoal px-5 py-3 text-sm font-semibold text-white transition hover:bg-slate-800">Book an Appointment</a>
+        </div>
+        <button id="menuButton" class="inline-flex items-center justify-center rounded-full border border-charcoal/15 bg-white/90 p-2 text-charcoal shadow-sm transition hover:bg-white lg:hidden">
+          <span class="sr-only">Open menu</span>
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 8h16M4 16h16" />
+          </svg>
+        </button>
+      </div>
+      <div id="mobileMenu" class="hidden border-t border-white/70 bg-white/95 p-6 lg:hidden">
+        <div class="space-y-4 text-sm uppercase tracking-[0.24em] text-charcoal">
+          <a href="#home" class="block transition hover:text-sand">Home</a>
+          <a href="#about" class="block transition hover:text-sand">About Gabby</a>
+          <a href="#treatments" class="block transition hover:text-sand">Treatments</a>
+          <a href="#location" class="block transition hover:text-sand">Location</a>
+        </div>
+        <div class="mt-6">
+          <a href="https://bookings.gettimely.com/cagliariaesthetics1/book?uri=https%3A%2F%2Fbook.gettimely.com%2FBooking%2FLocation%2F311878%3Fmobile%3DTrue%26params%3D%25253fclient-login%25253dtrue" class="inline-flex w-full justify-center rounded-full bg-charcoal px-5 py-3 text-sm font-semibold text-white transition hover:bg-slate-800">Book an Appointment</a>
+        </div>
+      </div>
+    </header>
+
+    <main id="home" class="pt-28">
+      <section class="relative overflow-hidden pb-16">
+        <div class="absolute inset-0 bg-[radial-gradient(circle_at_top_left,_rgba(198,168,137,0.18),_transparent_30%),linear-gradient(180deg,_rgba(255,255,255,0.85),_rgba(249,243,241,0.95))]"></div>
+        <div class="relative mx-auto max-w-7xl px-6 sm:px-8">
+          <div class="grid gap-12 py-16 lg:grid-cols-[1.1fr_0.9fr] lg:items-center">
+            <div class="space-y-8">
+              <div class="inline-flex rounded-full border border-charcoal/10 bg-white/70 px-4 py-2 text-xs uppercase tracking-[0.35em] text-charcoal shadow-sm">Gold Coast skin expertise</div>
+              <div class="max-w-2xl space-y-6">
+                <p class="text-sm uppercase tracking-[0.35em] text-sand">Premium skin wellness</p>
+                <h1 class="font-serif text-4xl font-semibold leading-tight text-charcoal sm:text-5xl xl:text-6xl">Advanced Skin Therapies & Natural Results.</h1>
+                <p class="text-base leading-8 text-charcoal/80 sm:text-lg">A community dedicated to natural beauty. Discover advanced, personalised protocols for real skin in Mermaid Beach, Gold Coast.</p>
+                <div class="flex flex-wrap gap-4">
+                  <a href="#treatments" class="inline-flex items-center justify-center rounded-full bg-charcoal px-7 py-3 text-sm font-semibold text-white shadow-xl transition hover:bg-slate-800">Discover Our Treatments</a>
+                  <a href="#" class="inline-flex items-center justify-center rounded-full border border-charcoal px-7 py-3 text-sm font-semibold text-charcoal transition hover:bg-charcoal/5">View Location</a>
+                </div>
+              </div>
+            </div>
+            <div class="relative flex items-center justify-center">
+                <div class="glass-card relative overflow-hidden rounded-[2rem] border border-white/70 p-6 shadow-2xl sm:p-8">
+                <img src="assets/hero.jpg" alt="Professional aesthetic therapist in clinic holding skincare jar" class="h-[420px] w-full rounded-[1.75rem] object-cover object-center sm:h-[520px]" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="about" class="mx-auto max-w-7xl px-6 pb-16 sm:px-8">
+        <div class="grid gap-12 lg:grid-cols-[0.95fr_1.05fr] lg:items-center">
+          <div class="order-2 lg:order-1">
+            <div class="rounded-[2rem] bg-white/80 p-6 shadow-xl backdrop-blur-xl sm:p-8">
+              <p class="text-sm uppercase tracking-[0.35em] text-sand">Meet Your Skin Expert</p>
+              <h2 class="mt-4 max-w-xl font-serif text-4xl font-semibold leading-tight text-charcoal sm:text-5xl">Elevating Confidence Through Tailored Care</h2>
+              <p class="mt-6 max-w-2xl text-base leading-8 text-charcoal/80">Led by Gabby, an Advanced Skin Therapist passionate about natural-looking results. At Cagliari Aesthetics, we move beyond standard beauty routines, focusing on advanced, results-driven treatments like Skin Needling, Microdermabrasion, and innovative Salmon DNA protocols. Our goal is to provide a welcoming, professional space where your skin’s health is the ultimate priority.</p>
+            </div>
+          </div>
+          <div class="order-1 lg:order-2">
+            <div class="relative overflow-hidden rounded-[2rem] bg-sand/10 p-1">
+              <img src="assets/gabby.jpg" alt="Professional portrait of a skin expert with arms crossed in a serene clinic" class="h-full min-h-[420px] w-full rounded-[1.75rem] object-cover object-center" />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="treatments" class="bg-blush/80 py-16">
+        <div class="mx-auto max-w-7xl px-6 sm:px-8">
+          <div class="text-center">
+            <p class="text-sm uppercase tracking-[0.35em] text-sand">Main Treatments</p>
+            <h3 class="mt-4 font-serif text-4xl font-semibold text-charcoal sm:text-5xl">Refined therapies designed for visible, natural improvement.</h3>
+            <p class="mx-auto mt-4 max-w-2xl text-base leading-8 text-charcoal/75">Expert care, advanced formulas and personalised treatment plans that deliver results with a softer, more elegant approach.</p>
+          </div>
+          <div class="mt-12 grid gap-8 md:grid-cols-2 xl:grid-cols-4">
+            <article class="glass-card flex h-full flex-col items-start rounded-[2rem] border border-white/70 p-6 shadow-xl transition hover:-translate-y-1 hover:shadow-2xl text-left">
+              <p class="text-sm uppercase tracking-[0.35em] text-sand">Skin Needling</p>
+              <h4 class="mt-3 text-xl md:text-2xl font-semibold text-charcoal">Skin Needling (Classic)</h4>
+              <p class="mt-3 text-base leading-6 text-charcoal/75">Advanced rejuvenation for scarring and texture.</p>
+            </article>
+            <article class="glass-card flex h-full flex-col items-start rounded-[2rem] border border-white/70 p-6 shadow-xl transition hover:-translate-y-1 hover:shadow-2xl text-left">
+              <p class="text-sm uppercase tracking-[0.35em] text-sand">Microdermabrasion</p>
+              <h4 class="mt-3 text-xl md:text-2xl font-semibold text-charcoal">Microdermabrasion Deluxe</h4>
+              <p class="mt-3 text-base leading-6 text-charcoal/75">Deep exfoliation for cellular renewal and a radiant glow.</p>
+            </article>
+            <article class="glass-card flex h-full flex-col items-start rounded-[2rem] border border-white/70 p-6 shadow-xl transition hover:-translate-y-1 hover:shadow-2xl text-left">
+              <p class="text-sm uppercase tracking-[0.35em] text-sand">LED Therapy</p>
+              <h4 class="mt-3 text-xl md:text-2xl font-semibold text-charcoal">LED Light Therapy</h4>
+              <p class="mt-3 text-base leading-6 text-charcoal/75">Calming illumination to stimulate collagen and soothe the skin.</p>
+            </article>
+            <article class="glass-card flex h-full flex-col items-start rounded-[2rem] border border-white/70 p-6 shadow-xl transition hover:-translate-y-1 hover:shadow-2xl text-left">
+              <p class="text-sm uppercase tracking-[0.35em] text-sand">Salmon DNA</p>
+              <h4 class="mt-3 text-xl md:text-2xl font-semibold text-charcoal">Salmon DNA & Collagen Protocols</h4>
+              <p class="mt-3 text-base leading-6 text-charcoal/75">Innovative treatments for profound skin regeneration and vitality.</p>
+            </article>
+          </div>
+          <div class="mt-12 rounded-[2rem] bg-white/80 p-6 shadow-xl sm:p-8">
+            <div class="grid gap-8 lg:grid-cols-[0.8fr_1.2fr] lg:items-center">
+              <div>
+                <p class="text-sm uppercase tracking-[0.35em] text-sand">Clinical care</p>
+                <h4 class="mt-4 font-serif text-3xl font-semibold text-charcoal">A calm, elevated experience for every treatment.</h4>
+                <p class="mt-4 text-base leading-8 text-charcoal/80">Every session is delivered with precision, comfort and a focus on long-term skin wellness. We blend high-performance protocols with gentle care and individually tailored plans.</p>
+              </div>
+              <div class="overflow-hidden rounded-[1.75rem] bg-slate-100">
+                <img src="assets/clinical-treatment.jpg" alt="Delicate skin treatment in a clinical setting" class="h-full w-full object-cover object-center" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="bg-sand py-16 text-charcoal">
+        <div class="mx-auto max-w-5xl px-6 text-center sm:px-8">
+          <div class="rounded-[2rem] bg-white/90 p-10 shadow-2xl backdrop-blur-xl sm:p-14">
+            <p class="text-sm uppercase tracking-[0.35em] text-charcoal/60">Ready to transform your skin?</p>
+            <h3 class="mt-4 font-serif text-4xl font-semibold leading-tight text-charcoal sm:text-5xl">Ready to Transform Your Skin? Join our community and experience personalised care.</h3>
+            <a href="https://bookings.gettimely.com/cagliariaesthetics1/book?uri=https%3A%2F%2Fbook.gettimely.com%2FBooking%2FLocation%2F311878%3Fmobile%3DTrue%26params%3D%25253fclient-login%25253dtrue" class="mt-8 inline-flex rounded-full bg-charcoal px-8 py-4 text-sm font-semibold text-white transition hover:bg-slate-800">Book Your Appointment</a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer id="location" class="border-t border-white/80 bg-white/90 py-12 text-charcoal">
+      <div class="mx-auto max-w-7xl px-6 sm:px-8">
+        <div class="grid gap-10 text-center md:grid-cols-3 md:text-left">
+          <div class="space-y-3">
+            <p class="text-sm uppercase tracking-[0.35em] text-sand">Visit Us</p>
+            <p class="font-semibold">2563 Gold Coast Highway, Shop 10</p>
+            <p>Mermaid Beach, Gold Coast, QLD, 4218</p>
+          </div>
+          <div class="space-y-3">
+            <p class="text-sm uppercase tracking-[0.35em] text-sand">Hours</p>
+            <p>Tue-Thu: 9am-6:30pm</p>
+            <p>Fri: 9am-6pm</p>
+            <p>Sat-Sun: 10am-5pm</p>
+          </div>
+          <div class="space-y-3">
+            <p class="text-sm uppercase tracking-[0.35em] text-sand">Connect</p>
+            <div class="flex justify-center gap-4 md:justify-start">
+              <a href="https://www.instagram.com/cagliari.aesthetics" class="text-charcoal transition hover:text-sand">Instagram</a>
+              <a href="https://www.facebook.com/people/Cagliari-Aesthetics/100089257215325/" class="text-charcoal transition hover:text-sand">Facebook</a>
+            </div>
+          </div>
+        </div>
+        <div class="mt-10 border-t border-white/70 pt-6 text-center text-sm text-charcoal/70">© 2026 Cagliari Aesthetics. All rights reserved.</div>
+      </div>
+    </footer>
+  </div>
+
+  <script>
+    const menuButton = document.getElementById('menuButton');
+    const mobileMenu = document.getElementById('mobileMenu');
+    menuButton.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden');
+    });
+  </script>
+</body>
+</html>
