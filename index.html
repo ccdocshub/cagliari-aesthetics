@@ -128,27 +128,72 @@
             <h3 class="mt-4 font-serif text-4xl font-semibold text-charcoal sm:text-5xl">Refined therapies designed for visible, natural improvement.</h3>
             <p class="mx-auto mt-4 max-w-2xl text-base leading-8 text-charcoal/75">Expert care, advanced formulas and personalised treatment plans that deliver results with a softer, more elegant approach.</p>
           </div>
-          <div class="mt-12 grid gap-8 md:grid-cols-2 xl:grid-cols-4">
-            <article class="glass-card flex h-full flex-col items-start rounded-[2rem] border border-white/70 p-6 shadow-xl transition hover:-translate-y-1 hover:shadow-2xl text-left">
-              <p class="text-sm uppercase tracking-[0.35em] text-sand">Skin Needling</p>
-              <h4 class="mt-3 text-xl md:text-2xl font-semibold text-charcoal">Skin Needling (Classic)</h4>
-              <p class="mt-3 text-base leading-6 text-charcoal/75">Advanced rejuvenation for scarring and texture.</p>
-            </article>
-            <article class="glass-card flex h-full flex-col items-start rounded-[2rem] border border-white/70 p-6 shadow-xl transition hover:-translate-y-1 hover:shadow-2xl text-left">
-              <p class="text-sm uppercase tracking-[0.35em] text-sand">Microdermabrasion</p>
-              <h4 class="mt-3 text-xl md:text-2xl font-semibold text-charcoal">Microdermabrasion Deluxe</h4>
-              <p class="mt-3 text-base leading-6 text-charcoal/75">Deep exfoliation for cellular renewal and a radiant glow.</p>
-            </article>
-            <article class="glass-card flex h-full flex-col items-start rounded-[2rem] border border-white/70 p-6 shadow-xl transition hover:-translate-y-1 hover:shadow-2xl text-left">
-              <p class="text-sm uppercase tracking-[0.35em] text-sand">LED Therapy</p>
-              <h4 class="mt-3 text-xl md:text-2xl font-semibold text-charcoal">LED Light Therapy</h4>
-              <p class="mt-3 text-base leading-6 text-charcoal/75">Calming illumination to stimulate collagen and soothe the skin.</p>
-            </article>
-            <article class="glass-card flex h-full flex-col items-start rounded-[2rem] border border-white/70 p-6 shadow-xl transition hover:-translate-y-1 hover:shadow-2xl text-left">
-              <p class="text-sm uppercase tracking-[0.35em] text-sand">Salmon DNA</p>
-              <h4 class="mt-3 text-xl md:text-2xl font-semibold text-charcoal">Salmon DNA & Collagen Protocols</h4>
-              <p class="mt-3 text-base leading-6 text-charcoal/75">Innovative treatments for profound skin regeneration and vitality.</p>
-            </article>
+          <div class="mt-12">
+            <div class="mb-6 flex flex-wrap items-center justify-between gap-4">
+              <p class="text-sm uppercase tracking-[0.35em] text-sand">Swipe through our signature treatments</p>
+              <div class="flex items-center gap-3">
+                <button id="treatmentsPrev" type="button" class="rounded-full border border-charcoal/15 bg-white/80 p-3 text-charcoal shadow-sm transition hover:bg-white disabled:cursor-not-allowed disabled:opacity-50" aria-label="Previous treatments">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" /></svg>
+                </button>
+                <button id="treatmentsNext" type="button" class="rounded-full border border-charcoal/15 bg-white/80 p-3 text-charcoal shadow-sm transition hover:bg-white disabled:cursor-not-allowed disabled:opacity-50" aria-label="Next treatments">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" /></svg>
+                </button>
+              </div>
+            </div>
+            <div class="overflow-hidden rounded-[2rem]">
+              <div id="treatmentsTrack" class="flex transition-transform duration-500 ease-out">
+                <article class="w-full shrink-0 px-2 pb-2 md:w-1/2 xl:w-1/3">
+                  <div class="glass-card flex h-full flex-col items-start rounded-[2rem] border border-white/70 p-6 text-left shadow-xl">
+                    <p class="text-sm uppercase tracking-[0.35em] text-sand">Skin Needling</p>
+                    <h4 class="mt-3 text-xl font-semibold text-charcoal md:text-2xl">Skin Needling Classic</h4>
+                    <p class="mt-3 text-base leading-6 text-charcoal/75">A collagen-stimulating treatment to refine texture, tone and the appearance of scarring.</p>
+                  </div>
+                </article>
+                <article class="w-full shrink-0 px-2 pb-2 md:w-1/2 xl:w-1/3">
+                  <div class="glass-card flex h-full flex-col items-start rounded-[2rem] border border-white/70 p-6 text-left shadow-xl">
+                    <p class="text-sm uppercase tracking-[0.35em] text-sand">Skin Needling</p>
+                    <h4 class="mt-3 text-xl font-semibold text-charcoal md:text-2xl">Skin Needling Premium</h4>
+                    <p class="mt-3 text-base leading-6 text-charcoal/75">Enhanced with Salmon DNA for a deeper regenerative boost and luminous glow.</p>
+                  </div>
+                </article>
+                <article class="w-full shrink-0 px-2 pb-2 md:w-1/2 xl:w-1/3">
+                  <div class="glass-card flex h-full flex-col items-start rounded-[2rem] border border-white/70 p-6 text-left shadow-xl">
+                    <p class="text-sm uppercase tracking-[0.35em] text-sand">Plasma Fibroblast</p>
+                    <h4 class="mt-3 text-xl font-semibold text-charcoal md:text-2xl">Plasma Fibroblast</h4>
+                    <p class="mt-3 text-base leading-6 text-charcoal/75">A precision treatment designed to support skin tightening and soften the look of fine lines.</p>
+                  </div>
+                </article>
+                <article class="w-full shrink-0 px-2 pb-2 md:w-1/2 xl:w-1/3">
+                  <div class="glass-card flex h-full flex-col items-start rounded-[2rem] border border-white/70 p-6 text-left shadow-xl">
+                    <p class="text-sm uppercase tracking-[0.35em] text-sand">Microdermabrasion</p>
+                    <h4 class="mt-3 text-xl font-semibold text-charcoal md:text-2xl">Microdermabrasion Deluxe</h4>
+                    <p class="mt-3 text-base leading-6 text-charcoal/75">Deep exfoliation for cellular renewal and a radiant, refreshed complexion.</p>
+                  </div>
+                </article>
+                <article class="w-full shrink-0 px-2 pb-2 md:w-1/2 xl:w-1/3">
+                  <div class="glass-card flex h-full flex-col items-start rounded-[2rem] border border-white/70 p-6 text-left shadow-xl">
+                    <p class="text-sm uppercase tracking-[0.35em] text-sand">Hydra Lips</p>
+                    <h4 class="mt-3 text-xl font-semibold text-charcoal md:text-2xl">Hydra Lips</h4>
+                    <p class="mt-3 text-base leading-6 text-charcoal/75">No filler • No lip brush • No pigment.</p>
+                    <p class="mt-3 text-base leading-6 text-charcoal/75">A nourishing lip treatment combining gentle exfoliation, a hydrating mask and cosmetic microneedling to soften dryness and improve texture.</p>
+                  </div>
+                </article>
+                <article class="w-full shrink-0 px-2 pb-2 md:w-1/2 xl:w-1/3">
+                  <div class="glass-card flex h-full flex-col items-start rounded-[2rem] border border-white/70 p-6 text-left shadow-xl">
+                    <p class="text-sm uppercase tracking-[0.35em] text-sand">Coming Soon</p>
+                    <h4 class="mt-3 text-xl font-semibold text-charcoal md:text-2xl">Micro Lips</h4>
+                    <p class="mt-3 text-base leading-6 text-charcoal/75">A new lip-focused treatment is on its way and will be shared soon.</p>
+                  </div>
+                </article>
+                <article class="w-full shrink-0 px-2 pb-2 md:w-1/2 xl:w-1/3">
+                  <div class="glass-card flex h-full flex-col items-start rounded-[2rem] border border-white/70 p-6 text-left shadow-xl">
+                    <p class="text-sm uppercase tracking-[0.35em] text-sand">Coming Soon</p>
+                    <h4 class="mt-3 text-xl font-semibold text-charcoal md:text-2xl">Stretch Marks &amp; Scars Repair</h4>
+                    <p class="mt-3 text-base leading-6 text-charcoal/75">This treatment will be available soon for those looking for support with skin texture and scarring.</p>
+                  </div>
+                </article>
+              </div>
+            </div>
           </div>
           <div class="mt-12 rounded-[2rem] bg-white/80 p-6 shadow-xl sm:p-8">
             <div class="grid gap-8 lg:grid-cols-[0.8fr_1.2fr] lg:items-center">
@@ -209,6 +254,47 @@
     menuButton.addEventListener('click', () => {
       mobileMenu.classList.toggle('hidden');
     });
+
+    const treatmentsTrack = document.getElementById('treatmentsTrack');
+    const treatmentsPrev = document.getElementById('treatmentsPrev');
+    const treatmentsNext = document.getElementById('treatmentsNext');
+    const treatmentCards = Array.from(treatmentsTrack.children);
+    let currentTreatmentIndex = 0;
+
+    function getVisibleCards() {
+      if (window.innerWidth >= 1280) return 3;
+      if (window.innerWidth >= 768) return 2;
+      return 1;
+    }
+
+    function updateTreatmentsCarousel() {
+      const visibleCards = getVisibleCards();
+      const maxIndex = Math.max(0, treatmentCards.length - visibleCards);
+      currentTreatmentIndex = Math.min(currentTreatmentIndex, maxIndex);
+      const offset = currentTreatmentIndex * (100 / visibleCards);
+      treatmentsTrack.style.transform = `translateX(-${offset}%)`;
+      treatmentsPrev.disabled = currentTreatmentIndex === 0;
+      treatmentsNext.disabled = currentTreatmentIndex >= maxIndex;
+    }
+
+    treatmentsPrev.addEventListener('click', () => {
+      if (currentTreatmentIndex > 0) {
+        currentTreatmentIndex -= 1;
+        updateTreatmentsCarousel();
+      }
+    });
+
+    treatmentsNext.addEventListener('click', () => {
+      const visibleCards = getVisibleCards();
+      const maxIndex = Math.max(0, treatmentCards.length - visibleCards);
+      if (currentTreatmentIndex < maxIndex) {
+        currentTreatmentIndex += 1;
+        updateTreatmentsCarousel();
+      }
+    });
+
+    window.addEventListener('resize', updateTreatmentsCarousel);
+    updateTreatmentsCarousel();
   </script>
 </body>
 </html>
